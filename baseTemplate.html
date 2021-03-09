@@ -1,0 +1,63 @@
+<html>
+
+<head>
+	<style>
+		<!--basePosterStyle-->
+	
+		<!--annotationStyle-->
+	</style>
+</head>
+
+<body>
+	<div class="poster">
+		<div id='mainBody'>
+			<img id='mainPoster' src="<!--imgSource-->" draggable="false" ondragstart="return false;"/>
+			
+			<!--annotationDOMs-->
+		</div>
+		
+		<div id="hotspotPopup">
+			<div id='hotspotClose'>&times;</div>
+			
+			<div id="hotspot">
+				<h1 id="hotspotHeader"></h1>
+			
+				<div id="hotspotContent">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+
+<script>
+	var annotations = <!--annotationJSON-->;
+
+	function showHotspot(ann) {
+		$("#hotspotHeader").html(ann["name"]);
+		
+		$("#hotspotContent").html(ann["content"]);
+		
+		$("#hotspotPopup").show("fast");
+	}
+	
+	$(document).ready(function() {
+		$(".hotspot").click(function() {
+			var ann = annotations[$(this).data("ann_id")];
+			
+			showHotspot(ann);
+		});
+		
+		$("#hotspotClose").click(function() {
+			$(this).parent().hide("fast");
+			
+			$("#hotspotContent").html("");
+		});
+	});
+</script>
+</html>

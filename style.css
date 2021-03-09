@@ -1,0 +1,21 @@
+.container {
+	margin-top: 50px;
+}
+
+.footer {
+	margin-top: 50px;
+}
+
+.instructionList {
+	display: inline;
+	margin-top: 20px;
+}
+
+.break {
+	margin-top: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin-left: 25px;
+}
