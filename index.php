@@ -90,7 +90,7 @@
 						</div>
 						<div class="card-footer">
 							<p class="primary-color">View the full instructions</p>
-							<a href="instructions/Digital Poster Instructions.pdf" target="_blank" class="btn btn-primary text-bold full-width">Instructions</a>
+							<a href="instructions/Digital Poster Instruction v2.pdf" target="_blank" class="btn btn-primary text-bold full-width">Instructions</a>
 						</div>
 					</div>
 				</div>
