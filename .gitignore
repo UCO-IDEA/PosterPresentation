@@ -1,0 +1,4 @@
+config.php
+DataAccess/PosterPresentationGoogleCredentials.json
+DataAccess/PosterDataAccess.php
+*.xml
